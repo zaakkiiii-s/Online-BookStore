@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.OrderDetailsController"
+      spacing="10" alignment="CENTER" prefWidth="600" prefHeight="400">
+
+    <Label text="Order Details" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="detailsTable" prefWidth="580" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colBookTitle" text="Book Title" prefWidth="200"/>
+            <TableColumn fx:id="colQuantity" text="Quantity" prefWidth="100"/>
+            <TableColumn fx:id="colPrice" text="Price" prefWidth="100"/>
+            <TableColumn fx:id="colSubtotal" text="Subtotal" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <Button text="Close" onAction="#closeWindow" />
+</VBox>

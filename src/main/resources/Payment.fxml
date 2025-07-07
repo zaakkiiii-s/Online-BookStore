@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.PaymentController" prefWidth="400" prefHeight="300"
+      stylesheets="@styles.css">
+
+    <Label text="Payment Details" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="cardHolderField" promptText="Cardholder Name" />
+    <TextField fx:id="cardNumberField" promptText="Card Number (16 digits)" />
+
+    <HBox spacing="10" >
+        <TextField fx:id="expiryField" promptText="Expiry MM/YY" maxWidth="150" />
+        <PasswordField fx:id="cvvField" promptText="CVV" maxWidth="100" />
+    </HBox>
+
+    <Button text="Pay Now" onAction="#handlePayment" />
+    <Label fx:id="messageLabel" style="-fx-text-fill: red;" wrapText="true" />
+
+</VBox>

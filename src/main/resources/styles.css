@@ -1,0 +1,60 @@
+/* style.css — Clean and Modern JavaFX Theme */
+
+/* GENERAL */
+.root {
+    -fx-background-color: #FFDAB9;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* LABELS */
+.label {
+    -fx-text-fill: #333;
+}
+
+/* TEXT INPUTS */
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 6 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-color: #F08080;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #DB7093;
+}
+
+/* TABLE */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-table-cell-border-color: #e0e0e0;
+}
+
+.table-column-header {
+    -fx-background-color: #eeeeee;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #c8e6c9;
+}
+
+/* MESSAGES */
+.message-success {
+    -fx-text-fill: green;
+}
+
+.message-error {
+    -fx-text-fill: red;
+}

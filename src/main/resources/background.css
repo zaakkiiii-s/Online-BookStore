@@ -1,0 +1,28 @@
+.root {
+    -fx-background-image: url("download.jpg");
+    -fx-background-size: cover;
+    -fx-background-color: #FFC0CB;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-repeat: no-repeat;
+}
+.label {
+    -fx-text-fill: #333;
+}
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 6 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+.button {
+    -fx-background-color: #F08080;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #DB7093;
+}

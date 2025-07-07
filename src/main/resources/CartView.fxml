@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.CartController"
+      stylesheets="@styles.css" prefWidth="400" prefHeight="300">
+
+    <TableView fx:id="cartTable" prefHeight="300" prefWidth="580">
+        <columns>
+            <TableColumn fx:id="bookTitleCol" text="Book Title" prefWidth="250"/>
+            <TableColumn fx:id="quantityCol" text="Quantity" prefWidth="100"/>
+            <TableColumn fx:id="priceCol" text="Price" prefWidth="100"/>
+            <TableColumn fx:id="removeCol" text="Remove" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="20" alignment="CENTER_RIGHT">
+        <Label text="Total:"/>
+        <Label fx:id="totalAmountLabel" text="0.00"/>
+    </HBox>
+    <Button text="⬅ Back to Dashboard" onAction="#goBackToDashboard" />
+    <Button text="Place Order" onAction="#placeOrder" />
+    <Button text="Pay Now" fx:id="payNowButton" onAction="#goToPayment" disable="true"/>
+
+</VBox>
+
+

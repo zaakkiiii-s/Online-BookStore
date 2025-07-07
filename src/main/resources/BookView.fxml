@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.BookController"
+            prefWidth="600" prefHeight="400"
+            stylesheets="@styles.css">
+    <TableView fx:id="bookTable" layoutX="10" layoutY="10" prefWidth="580" prefHeight="350">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="titleCol" text="Title" prefWidth="200"/>
+            <TableColumn fx:id="priceCol" text="Price" prefWidth="100"/>
+            <TableColumn fx:id="stockCol" text="Stock" prefWidth="80"/>
+        </columns>
+    </TableView>
+    <Button text="Refresh" layoutX="500" layoutY="370" onAction="#refreshTable"/>
+</AnchorPane>

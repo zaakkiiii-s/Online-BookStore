@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="controller.LoginController"
+      stylesheets="background.css" prefWidth="800" prefHeight="800">
+    <Label text="📚 BookStore Login" />
+    <TextField fx:id="emailField" promptText="Enter your email" />
+    <PasswordField fx:id="passwordField" promptText="Enter your password" />
+    <Button text="Login" onAction="#handleLogin"/>
+    <Label fx:id="messageLabel"/>
+    <Button text="Register" onAction="#openRegister"/>
+
+</VBox>

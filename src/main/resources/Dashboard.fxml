@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.DashboardController"
+      alignment="CENTER" prefHeight="400"
+      stylesheets="@styles.css" prefWidth="400">
+
+    <Label text="📚 Book Store Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="bookTable" prefHeight="250" prefWidth="580">
+        <columns>
+            <TableColumn fx:id="colBookID" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colTitle" text="Title" prefWidth="250"/>
+            <TableColumn fx:id="colPrice" text="Price" prefWidth="100"/>
+            <TableColumn fx:id="colStock" text="Stock" prefWidth="80"/>
+            <TableColumn fx:id="colQuantity" text="Qty to Add" prefWidth="100"/>
+            <TableColumn fx:id="colAdd" text="Add to Cart" prefWidth="100"/>
+
+
+        </columns>
+    </TableView>
+
+    <Label fx:id="messageLabel" textFill="red"/>
+    <Button text="View Cart" onAction="#openCart"/>
+    <Button text="View Orders" onAction="#openOrderHistory" />
+
+
+</VBox>
+
+
