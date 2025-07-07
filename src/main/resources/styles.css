@@ -16,19 +16,27 @@
 .text-field, .password-field {
     -fx-background-color: #ffffff;
     -fx-border-color: #cccccc;
-    -fx-border-radius: 5;
-    -fx-padding: 6 10;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 8 14;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+    -fx-font-size: 14px;
+    -fx-focus-color: #F08080;
+    -fx-faint-focus-color: transparent;
 }
+
 
 /* BUTTONS */
 .button {
     -fx-background-color: #F08080;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-background-radius: 6;
+    -fx-background-radius: 20;     /* ⬅️ Increased rounding */
+    -fx-border-radius: 20;
+    -fx-padding: 8 14;
     -fx-cursor: hand;
 }
+
 
 .button:hover {
     -fx-background-color: #DB7093;
